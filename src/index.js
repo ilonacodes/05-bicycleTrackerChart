@@ -171,6 +171,6 @@ for (var i = data.length - 30; i < data.length; i++) {
     var options = { month: 'short', day: 'numeric' };
     datesData.innerText = entry.date.toLocaleDateString("en-US", options);
 
-    barText.innerText = entry.distance
+    barText.innerText = Math.floor(entry.distance);
 
 }
